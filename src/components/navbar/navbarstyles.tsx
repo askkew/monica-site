@@ -15,7 +15,7 @@ export const Navbarbuttons = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'space-around',
-  width: '40vw',
+  width: 'clamp(700px, 50vw, 1000px)',
   alignItems: 'center',
 })
 
@@ -23,7 +23,7 @@ export const Navlink = styled(Link)({
   textDecoration: 'none',
   color: '#ffffff',
   fontFamily: 'JetBrains Mono',
-  fontSize: '1.5rem',
+  fontSize: '1.2rem',
   cursor: 'pointer',
   '&:active': {
     color: 'gainsboro',

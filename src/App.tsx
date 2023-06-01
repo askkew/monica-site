@@ -6,7 +6,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Services from './pages/services';
 import Results from './pages/results';
-import Faq from './pages/faq';
+import Shop from './pages/shop';
 import Contact from './pages/contact';
 
 const Container = styled('div')({
@@ -27,7 +27,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Services />} />
           <Route path='/results' element={<Results />} />
-          <Route path='/faq' element={<Faq />} />
+          <Route path='/shop' element={<Shop />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router>
