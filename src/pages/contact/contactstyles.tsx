@@ -18,16 +18,17 @@ export const Contacttitle = styled('h1')({
 export const StyledFormControl = styled(FormControl)({
   width: 'clamp(250px, 50vw, 500px)',
   gap: '1rem',
+  marginBottom: '18rem',
 })
 
 export const Names = styled('div')({
   display: 'flex',
   flexDirection: 'row',
-  justifyContent: 'space-around',
+  justifyContent: 'space-between',
 })
 
 export const Namefield = styled(TextField)({
-  width: '45%',
+  width: '48%',
 })
 
 export const Emailfield = styled(TextField)({

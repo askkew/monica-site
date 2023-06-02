@@ -1,6 +1,7 @@
 import React from 'react'
 import { Contactcontainer, Contacttitle, Emailfield, Namefield, Names, StyledFormControl } from './contactstyles'
 import { TextField } from '@mui/material'
+import Leg from '../../components/leg'
 
 const Contact = () => {
   return (
@@ -20,6 +21,7 @@ const Contact = () => {
             rows={4}
           />
       </StyledFormControl>
+      <Leg />
     </Contactcontainer>
   )
 }

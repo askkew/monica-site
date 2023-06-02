@@ -8,6 +8,7 @@ import Services from './pages/services';
 import Results from './pages/results';
 import Shop from './pages/shop';
 import Contact from './pages/contact';
+import Footer from './components/footer';
 
 const Container = styled('div')({
   display: 'flex',
@@ -31,6 +32,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router>
+      <Footer />
     </Container>
   );
 }

@@ -17,6 +17,7 @@ export const Linkbox = styled('div')({
     flexDirection: 'column',
   },
   gap: '2rem',
+  marginBottom: '22rem',
 })
 
 export const Shoplink = styled('button')({
