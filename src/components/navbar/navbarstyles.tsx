@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 
 export const Navbarcontainer = styled('div')({
   width: '100%',
-  height: '10vh',
+  height: '10%',
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'center',
   backgroundColor: '#000000',
+  position: 'fixed',
+  top: 0,
+  zIndex: 100,
 })
 
 export const Navbarbuttons = styled('div')({

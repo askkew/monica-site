@@ -1,10 +1,16 @@
 import React from 'react'
+import { Homecontainer } from './homestyles'
+import { Parallax } from 'react-parallax'
+import main from './banner.jpg'
+import '../../index.css'
 
 const Home = () => {
   return (
-    <div style={{minHeight: "100vh"}}>
-      <img src="https://media.khou.com/assets/KHOU/images/d8494a52-08e4-4fde-89ef-4433b997921e/d8494a52-08e4-4fde-89ef-4433b997921e_1140x641.jpg" height="700"/>
-    </div>
+    <Parallax className='image' blur={0} bgImage={main} strength={800} bgImageStyle={{minHeight:"100vh"}}>
+      <div className='content'>
+        <span className="img-txt">a trip to Space</span>
+      </div>
+    </Parallax>
   )
 }
 

@@ -26,5 +26,6 @@ export const Shoplink = styled('button')({
   height: '300px',
   background: 'none',
   border: '2px solid black',
+  borderRadius: '10px',
   cursor: 'pointer',
 })

@@ -42,3 +42,27 @@ code {
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.2);
 }
+
+.image {
+  min-height: 100vh;
+  position: relative;
+}
+
+.image .content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.content span.img-txt {
+  background-color: #333;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+

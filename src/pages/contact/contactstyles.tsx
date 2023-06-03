@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { FormControl, TextField } from '@mui/material';
+import { Button, FormControl, TextField } from '@mui/material';
 
 export const Contactcontainer = styled('div')({
   display: 'flex',
@@ -18,7 +18,7 @@ export const Contacttitle = styled('h1')({
 export const StyledFormControl = styled(FormControl)({
   width: 'clamp(250px, 50vw, 500px)',
   gap: '1rem',
-  marginBottom: '18rem',
+  marginBottom: '10rem',
 })
 
 export const Names = styled('div')({
@@ -28,9 +28,23 @@ export const Names = styled('div')({
 })
 
 export const Namefield = styled(TextField)({
-  width: '48%',
+  width: '100%',
 })
 
 export const Emailfield = styled(TextField)({
   width: '100%',
+})
+
+export const Contactbutton = styled(Button)({
+  width: '100%',
+  color: 'black',
+  border: '1px solid darkgrey',
+  fontFamily: 'JetBrains Mono',
+  ':hover': {
+    border: '1px solid black',
+  },
+  ':active': {
+    border: '2px solid #2196f3',
+    color: '#2196f3',
+  }
 })
