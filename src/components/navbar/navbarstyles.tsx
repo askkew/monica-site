@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 export const Navbarcontainer = styled('div')({
   width: '100%',
-  height: '10%',
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
@@ -12,6 +11,10 @@ export const Navbarcontainer = styled('div')({
   position: 'fixed',
   top: 0,
   zIndex: 100,
+  height: '6rem',
+  '@media (max-width: 768px)': {
+    height: '4.5rem',
+  }
 })
 
 export const Navbarbuttons = styled('div')({

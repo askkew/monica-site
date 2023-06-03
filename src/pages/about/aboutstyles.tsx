@@ -7,8 +7,11 @@ export const Aboutcontainer = styled('div')({
   alignItems: 'center',
   justifyContent: 'center',
   width: 'clamp(700px, 50vw, 1000px)',
-  marginTop: '4rem',
   border: '2px solid green',
+  marginTop: '6rem',
+  '@media (max-width: 768px)': {
+    marginTop: '4.5rem',
+  }
 })
 
 export const Firstcard = styled(Card)({

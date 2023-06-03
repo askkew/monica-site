@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Homecontainer = styled('div')({
+export const Servicecontainer = styled('div')({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -13,7 +13,7 @@ export const Homecontainer = styled('div')({
   }
 })
 
-export const Wordsection = styled('div')({
+export const Lessonscontainer = styled('div')({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',

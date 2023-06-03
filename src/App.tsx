@@ -9,6 +9,7 @@ import Results from './pages/results';
 import Shop from './pages/shop';
 import Contact from './pages/contact';
 import Footer from './components/footer';
+import FirstImage from './pages/services/FirstImage';
 
 const Container = styled('div')({
   display: 'flex',

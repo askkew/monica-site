@@ -6,8 +6,10 @@ export const Shopcontainer = styled('div')({
   alignItems: 'center',
   justifyContent: 'center',
   width: 'clamp(700px, 50vw, 1000px)',
-  marginTop: '4rem',
-  // border: '1px solid black',
+  marginTop: '6rem',
+  '@media (max-width: 768px)': {
+    marginTop: '4.5rem',
+  }
 })
 
 export const Linkbox = styled('div')({
