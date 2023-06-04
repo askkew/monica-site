@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { Parallax } from 'react-parallax';
+import { Link } from 'react-router-dom';
 
 export const Homecontainer = styled('div')({
   display: 'flex',
@@ -20,7 +21,8 @@ export const Wordsection = styled('div')({
   alignItems: 'center',
   justifyContent: 'center',
   margin: '2rem',
-  minHeight: '60vh',
+  height: 'clamp(600px, 60vw, 800px)',
+  width: 'clamp(200px, 70vw, 1200px)',
 })
 
 export const HomeParallax = styled(Parallax)({
@@ -51,14 +53,15 @@ export const Subbar = styled('div')({
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '100%',
+  width: '100vw',
   height: '14rem',
   backgroundColor: 'black',
   position: 'absolute',
   top: '40%',
 })
 
-export const Subbarbutton = styled('div')({
+export const Subbarbutton = styled(Link)({
+  textDecoration: 'none',
   width: '13.3%',
   height: '100%',
   backgroundColor: 'white',

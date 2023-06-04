@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 
 export const Navbarcontainer = styled('div')({
-  width: '100%',
+  width: '100vw',
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',

@@ -8,11 +8,11 @@ const Home = () => {
     <Homecontainer>
       <HomeBanner />
       <Subbar>
-        <Subbarbutton style={{  backgroundImage: 'url(https://img1.wsimg.com/isteam/ip/8290d3ac-ca9d-4737-ad0b-b2a72ebfe6f7/Blue%20Crab.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800)',}}><SubbarbuttonText>About</SubbarbuttonText></Subbarbutton>
-        <Subbarbutton style={{  backgroundImage: 'url(https://img1.wsimg.com/isteam/ip/8290d3ac-ca9d-4737-ad0b-b2a72ebfe6f7/Caine%20Lawson%20800.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800)',}}><SubbarbuttonText>Services</SubbarbuttonText></Subbarbutton>
-        <Subbarbutton style={{  backgroundImage: 'url(https://img1.wsimg.com/isteam/ip/8290d3ac-ca9d-4737-ad0b-b2a72ebfe6f7/Stay.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800)',}}><SubbarbuttonText>Results</SubbarbuttonText></Subbarbutton>
-        <Subbarbutton style={{  backgroundImage: 'url(https://img1.wsimg.com/isteam/ip/8290d3ac-ca9d-4737-ad0b-b2a72ebfe6f7/Houston%20Texans%20Andre.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800)',}}><SubbarbuttonText>Shop</SubbarbuttonText></Subbarbutton>
-        <Subbarbutton style={{  backgroundImage: 'url(https://img1.wsimg.com/isteam/ip/8290d3ac-ca9d-4737-ad0b-b2a72ebfe6f7/Sleigh%20Monica%20Medellin%20600%20Cropped.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800)',}}><SubbarbuttonText>Contact</SubbarbuttonText></Subbarbutton>
+        <Subbarbutton to="/about" style={{  backgroundImage: 'url(https://img1.wsimg.com/isteam/ip/8290d3ac-ca9d-4737-ad0b-b2a72ebfe6f7/Blue%20Crab.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800)',}}><SubbarbuttonText>About</SubbarbuttonText></Subbarbutton>
+        <Subbarbutton to="/services" style={{  backgroundImage: 'url(https://img1.wsimg.com/isteam/ip/8290d3ac-ca9d-4737-ad0b-b2a72ebfe6f7/Caine%20Lawson%20800.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800)',}}><SubbarbuttonText>Services</SubbarbuttonText></Subbarbutton>
+        <Subbarbutton to="/results" style={{  backgroundImage: 'url(https://img1.wsimg.com/isteam/ip/8290d3ac-ca9d-4737-ad0b-b2a72ebfe6f7/Stay.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800)',}}><SubbarbuttonText>Results</SubbarbuttonText></Subbarbutton>
+        <Subbarbutton to="/shop" style={{  backgroundImage: 'url(https://img1.wsimg.com/isteam/ip/8290d3ac-ca9d-4737-ad0b-b2a72ebfe6f7/Houston%20Texans%20Andre.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800)',}}><SubbarbuttonText>Shop</SubbarbuttonText></Subbarbutton>
+        <Subbarbutton to="/contact" style={{  backgroundImage: 'url(https://img1.wsimg.com/isteam/ip/8290d3ac-ca9d-4737-ad0b-b2a72ebfe6f7/Sleigh%20Monica%20Medellin%20600%20Cropped.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800)',}}><SubbarbuttonText>Contact</SubbarbuttonText></Subbarbutton>
       </Subbar>
       <Wordsection>
         <h1>Private lessons</h1>

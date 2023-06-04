@@ -1,11 +1,23 @@
 import React from 'react'
-import { Resultcontainer } from './resultstyles'
+import { Resultcardimage, Resultcontainer, Wordsection } from './resultstyles'
 import Leg from '../../components/leg'
+import ResultsImage from './ResultsImage'
+import winnerimage from './winnerpicture.jpg'
+import SeparatorImage from './SeparatorImage'
 
 const Results = () => {
   return (
     <Resultcontainer>
-      <img src="https://media.khou.com/assets/KHOU/images/d8494a52-08e4-4fde-89ef-4433b997921e/d8494a52-08e4-4fde-89ef-4433b997921e_1140x641.jpg" height="700"/>
+      <ResultsImage />
+      <Wordsection>
+        <h1>Results</h1>
+        <Resultcardimage src={winnerimage}/>
+      </Wordsection>
+      <SeparatorImage />
+      <Wordsection>
+        <h1>Results</h1>
+        <Resultcardimage src={winnerimage}/>
+      </Wordsection>
       <Leg />
     </Resultcontainer>
   )
