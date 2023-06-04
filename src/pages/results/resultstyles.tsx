@@ -19,7 +19,17 @@ export const Wordsection = styled('div')({
   alignItems: 'center',
   justifyContent: 'center',
   margin: '2rem',
-  height: 'clamp(600px, 60vw, 800px)',
+  height: '5vh',
+  width: 'clamp(200px, 70vw, 1200px)',
+})
+
+export const Resultintro = styled('div')({
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  margin: '2rem',
+  height: 'clamp(250px, 30vw, 300px)',
   width: 'clamp(200px, 70vw, 1200px)',
 })
 
@@ -58,5 +68,6 @@ export const ResultsSubtitle = styled('span')({
 })
 
 export const Resultcardimage = styled('img')({
-  height: '80%',
+  height: '35vh',
 })
+
