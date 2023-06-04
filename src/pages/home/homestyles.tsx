@@ -54,7 +54,7 @@ export const Subbar = styled('div')({
   alignItems: 'center',
   justifyContent: 'center',
   width: '100vw',
-  height: '14rem',
+  height: '22vh',
   backgroundColor: 'black',
   position: 'absolute',
   top: '40%',
@@ -62,7 +62,7 @@ export const Subbar = styled('div')({
 
 export const Subbarbutton = styled(Link)({
   textDecoration: 'none',
-  width: '13.3%',
+  width: '15%',
   height: '100%',
   backgroundColor: 'white',
   display: 'flex',
