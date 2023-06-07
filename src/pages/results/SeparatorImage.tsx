@@ -1,17 +1,28 @@
-import { Parallax } from 'react-parallax';
-import main from './championpicture.png';
-import image from './winnerpicture.jpg';
-import { Resultcardimage, ResultsParallax, ResultsSubtitle, ResultsTitle, ResultsTitleText } from './resultstyles';
-import { Resultdetails, Resultlabel, Resultlabelcontainer, Separatorcontainer } from './separatortextstyles';
+import { Resultdetails, Resultlabel, Resultlabelcontainer, Separatorcontainer, Resultcardimage, ResultsParallax } from './resultstyles';
 
-const SeparatorImage = () => {
+interface ResultData {
+  id: number;
+  name: string;
+  info: string;
+  image: string;
+  year: number;
+  result: string;
+  backgroundimage: string;
+}
+
+interface SeparatorImageProps {
+  data: ResultData;
+}
+
+const SeparatorImage = ({ data }: SeparatorImageProps) => {
+  const { image, year, name, result, info, backgroundimage } = data;
   return (
-    <ResultsParallax bgImage={main} strength={800} style={{fiilter: 'saturate(0)', height: '45vh', position: 'relative', width: '100%'}}>
+    <ResultsParallax bgImage={backgroundimage} strength={800} style={{fiilter: 'saturate(0)', height: '45vh', position: 'relative', width: '100%'}}>
       <Separatorcontainer>
         <Resultcardimage src={image} height="50"/>
         <Resultlabelcontainer>
-          <Resultlabel>2023 Result: Grand prize winner!</Resultlabel>
-          <Resultdetails>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis est explicabo accusamus quas totam corrupti cumque maxime harum nemo, quisquam, eos odio suscipit enim, non adipisci recusandae quaerat! Non, ducimus.</Resultdetails>
+          <Resultlabel>{year} Result: {name}</Resultlabel>
+          <Resultdetails>{info}</Resultdetails>
         </Resultlabelcontainer>
       </Separatorcontainer>
     </ResultsParallax>

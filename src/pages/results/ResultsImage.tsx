@@ -1,5 +1,5 @@
 import { Parallax } from 'react-parallax';
-import main from './banner2.jpg';
+import main from './images/banner2.jpg';
 import { ResultsParallax, ResultsSubtitle, ResultsTitle, ResultsTitleText } from './resultstyles';
 
 const ResultsImage = () => {
