@@ -11,11 +11,11 @@ import miah2main from './images/miah2main.jpeg'
 import liliangpeople from './images/liliangpeople.jpg'
 import liliangmain from './images/liliangmain.jpg'
 import miah1people from './images/miah1people.jpg'
-import miah1main from './images/miah1main.png'
+import miah1main from './images/miah1main.jpg'
 import chloemillspeople from './images/chloemillspeople.jpg'
 import chloemillsmain from './images/chloemillsmain.png'
 import savannahjohnstonpeople from './images/savannahjohnstonpeople.jpg'
-import savannahjohnstonmain from './images/savannahjohnstonmain.png'
+import savannahjohnstonmain from './images/miah1main.jpg'
 import sonalipuripeople from './images/sonalipuripeople.jpg'
 import sonalipurimain from './images/sonalipurimain.jpg'
 import mathalycarranzapeople from './images/mathalycarranzapeople.jpg'
@@ -133,12 +133,11 @@ const Results = () => {
       <ResultsImage />
       <Resultintro>
         <h1>Results</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident corrupti eum nihil mollitia eveniet illum est aliquam facilis explicabo voluptatibus delectus ut accusantium quis perspiciatis adipisci labore, autem suscipit.</h2>
       </Resultintro>
       { resultData.map((result) => (
         <div key={result.id}>
-          <Wordsection>
-            {/* <h2>{result.year} Results</h2> */}
-          </Wordsection>
+          <Wordsection />
           <SeparatorImage data={result}/>
         </div>
       ))}
