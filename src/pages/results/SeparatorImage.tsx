@@ -21,7 +21,8 @@ const SeparatorImage = ({ data }: SeparatorImageProps) => {
       <Separatorcontainer>
         <Resultcardimage src={image} height="50"/>
         <Resultlabelcontainer>
-          <Resultlabel>{year} Result: {name}</Resultlabel>
+          <Resultlabel>{name}</Resultlabel>
+          <Resultdetails>{year}</Resultdetails>
           <Resultdetails>{info}</Resultdetails>
         </Resultlabelcontainer>
       </Separatorcontainer>

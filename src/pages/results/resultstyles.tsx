@@ -29,7 +29,7 @@ export const Resultintro = styled('div')({
   alignItems: 'center',
   justifyContent: 'center',
   margin: '2rem',
-  height: 'clamp(250px, 30vw, 300px)',
+  height: 'clamp(150px, 10vw, 300px)',
   width: 'clamp(200px, 70vw, 1200px)',
 })
 

@@ -137,7 +137,7 @@ const Results = () => {
       { resultData.map((result) => (
         <div key={result.id}>
           <Wordsection>
-            <h2>{result.year} Results</h2>
+            {/* <h2>{result.year} Results</h2> */}
           </Wordsection>
           <SeparatorImage data={result}/>
         </div>
