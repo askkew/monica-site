@@ -7,7 +7,7 @@ export const Contactcontainer = styled('div')({
   alignItems: 'center',
   justifyContent: 'center',
   width: 'clamp(700px, 50vw, 1000px)',
-  marginTop: '6rem',
+  marginTop: '12rem',
   '@media (max-width: 768px)': {
     marginTop: '4.5rem',
   }

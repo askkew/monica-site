@@ -2,6 +2,7 @@ import React from 'react'
 import { Homecontainer, Subbar, Subbarbutton, SubbarbuttonText, Wordsection } from './homestyles'
 import Leg from '../../components/leg'
 import HomeBanner from './HomeBanner'
+import Contact from '../contact'
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         Veniam repellat quibusdam fugiat voluptatem, voluptate asperiores ex similique illum quod voluptas ullam error aperiam distinctio tempora dolorum id itaque libero voluptatibus totam ipsam quo. Adipisci alias aliquam provident minima.
         Tenetur doloremque culpa, sunt perferendis deleniti eligendi tempora quae rem similique facilis libero atque nostrum officiis est, dolor cupiditate praesentium iusto sed odit consequatur dolorum quis porro animi totam. Amet.</p>
       </Wordsection>
+      <Contact />
       <Leg />
     </Homecontainer>
   )

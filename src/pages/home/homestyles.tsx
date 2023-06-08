@@ -40,7 +40,7 @@ export const HomeTitle = styled('div')({
 })
 
 export const HomeTitleText = styled('span')({
-  backgroundColor: '#333',
+  backgroundColor: 'rgba(51, 51, 51, 0.85)',
   textTransform: 'uppercase',
   color: '#fff',
   padding: '1rem',
@@ -84,7 +84,7 @@ export const Subbarbutton = styled(Link)({
 })
 
 export const SubbarbuttonText = styled('span')({
-  backgroundColor: '#333',
+  backgroundColor: 'rgba(51, 51, 51, 0.85)',
   textTransform: 'uppercase',
   color: 'white',
   padding: '1rem',

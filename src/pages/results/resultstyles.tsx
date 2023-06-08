@@ -21,6 +21,12 @@ export const Wordsection = styled('div')({
   margin: '2rem',
   height: '5vh',
   width: 'clamp(200px, 70vw, 1200px)',
+  '@media (max-width: 768px)': {
+    height: '3vh',  
+  },
+  '@media (max-width: 368px)': {
+    height: '1.5vh',  
+  }
 })
 
 export const Resultintro = styled('div')({
@@ -50,7 +56,7 @@ export const ResultsTitle = styled('div')({
 })
 
 export const ResultsTitleText = styled('span')({
-  backgroundColor: '#333',
+  backgroundColor: 'rgba(51, 51, 51, 0.85)',
   textTransform: 'uppercase',
   color: '#fff',
   padding: '1rem',
@@ -59,7 +65,7 @@ export const ResultsTitleText = styled('span')({
 })
 
 export const ResultsSubtitle = styled('span')({
-  backgroundColor: '#333',
+  backgroundColor: 'rgba(51, 51, 51, 0.85)',
   textTransform: 'uppercase',
   color: '#fff',
   padding: '1rem',
@@ -69,6 +75,12 @@ export const ResultsSubtitle = styled('span')({
 
 export const Resultcardimage = styled('img')({
   height: '35vh',
+  '@media (max-width: 768px)': {
+    height: '25vh',  
+  },
+  '@media (max-width: 368px)': {
+    height: '19vh',  
+  }
 })
 
 export const Separatorcontainer = styled('div')({
@@ -79,6 +91,9 @@ export const Separatorcontainer = styled('div')({
   width: '100vw',
   height: '100%',
   marginTop: '2.5rem',
+  '@media (max-width: 368px)': {
+    flexDirection: 'column',
+  }
 })
 
 export const Resultlabelcontainer = styled('div')({
@@ -91,7 +106,7 @@ export const Resultlabelcontainer = styled('div')({
 })
 
 export const Resultlabel = styled('h1')({
-  backgroundColor: '#333',
+  backgroundColor: 'rgba(51, 51, 51, 0.85)',
   textTransform: 'uppercase',
   color: '#fff',
   padding: '1rem',
@@ -100,7 +115,12 @@ export const Resultlabel = styled('h1')({
   letterSpacing: '4px',
   margin: 0,
   '@media (max-width: 768px)': {
-    fontSize: '2.1vw',  
+    fontSize: '3.1vw',  
+    padding: '0.6rem',
+  },
+  '@media (max-width: 368px)': {
+    fontSize: '5.1vw',  
+    padding: '0.6rem',
   }
 })
 
