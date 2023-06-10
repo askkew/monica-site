@@ -1,18 +1,40 @@
 import React from 'react'
-import { Navbarbuttons, Navbarcontainer, Navlink } from './navbarstyles'
+import { MobileNavContainer, NavContainer, Navbarbuttons, Navbarcontainer, Navlink, StyledDrawer, StyledExitButton, StyledExitIcon, StyledIconButton, StyledMenuIcon } from './navbarstyles'
 import './navbarindex.css'
 
 const Navbar = () => {
+  const [open, setOpen] = React.useState(false);
+
+  const toggleOpen = () => {
+    setOpen(!open);
+  };
+
   return (
     <Navbarcontainer>
-      <Navbarbuttons>
-        <Navlink id="custombutton" to='/'>Home</Navlink>
-        <Navlink id="custombutton" to='/about'>About</Navlink>
-        <Navlink id="custombutton" to='/services'>Services</Navlink>
-        <Navlink id="custombutton" to='/results'>Results</Navlink>
-        <Navlink id="custombutton" to='/shop'>Shop</Navlink>
-        <Navlink id="custombutton" to='/contact'>Contact</Navlink>
-      </Navbarbuttons>
+      <NavContainer>
+        <StyledIconButton onClick={toggleOpen}>
+          <StyledMenuIcon />
+        </StyledIconButton>
+        <StyledDrawer open={open} onClose={toggleOpen} anchor="top">
+          <MobileNavContainer>
+            <StyledExitButton onClick={toggleOpen}>
+              <StyledExitIcon />
+            </StyledExitButton>
+            <Navlink id="custombutton" to='/'>Home</Navlink>
+            <Navlink id="custombutton" to='/about'>About</Navlink>
+            <Navlink id="custombutton" to='/services'>Services</Navlink>
+            <Navlink id="custombutton" to='/results'>Results</Navlink>
+            <Navlink id="custombutton" to='/contact'>Contact</Navlink>
+          </MobileNavContainer>
+        </StyledDrawer>
+        <Navbarbuttons>
+          <Navlink id="custombutton" to='/'>Home</Navlink>
+          <Navlink id="custombutton" to='/about'>About</Navlink>
+          <Navlink id="custombutton" to='/services'>Services</Navlink>
+          <Navlink id="custombutton" to='/results'>Results</Navlink>
+          <Navlink id="custombutton" to='/contact'>Contact</Navlink>
+        </Navbarbuttons>
+      </NavContainer>
     </Navbarcontainer>
   )
 }

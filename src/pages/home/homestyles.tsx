@@ -46,6 +46,24 @@ export const HomeTitleText = styled('span')({
   padding: '1rem',
   fontSize: '2.5rem',
   letterSpacing: '10px',
+  '@media (max-width: 768px)': {
+    fontSize: '1.9rem',
+  },
+  '@media (max-width: 568px)': {
+    fontSize: '1.4rem',
+  }
+})
+
+export const Subbarbackground = styled('div')({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '100vw',
+  height: '18vh',
+  backgroundColor: 'black',
+  position: 'absolute',
+  top: '40%',
 })
 
 export const Subbar = styled('div')({
@@ -55,14 +73,16 @@ export const Subbar = styled('div')({
   justifyContent: 'center',
   width: '100vw',
   height: '22vh',
-  backgroundColor: 'black',
-  position: 'absolute',
-  top: '40%',
+  scale: '1.1',
+  '@media (max-width: 668px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+  },
 })
 
 export const Subbarbutton = styled(Link)({
   textDecoration: 'none',
-  width: '15%',
+  width: '20%',
   height: '100%',
   backgroundColor: 'white',
   display: 'flex',
@@ -72,14 +92,19 @@ export const Subbarbutton = styled(Link)({
   cursor: 'pointer',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
-  scale: '1.2',
-  margin: '1.2rem',
+  overflow: 'hidden',
   '&:hover': {
     transition: 'all 0.3s ease-in-out',
     transform: 'translateY(5px) scale(1.025)',
     boxShadow: '0 5px 15px rgba(0,0,0,0.3)',
     opacity: '0.95',
     zIndex: '99',
+  },
+  '@media (max-width: 868px)': {
+    width: '25%',
+  },
+  '@media (max-width: 668px)': {
+    width: '100%',
   }
 })
 
@@ -90,4 +115,18 @@ export const SubbarbuttonText = styled('span')({
   padding: '1rem',
   fontSize: '1.5rem',
   letterSpacing: '10px',
+  '@media (max-width: 868px)': {
+    fontSize: '1.2rem',
+  },
+  '@media (max-width: 668px)': {
+    fontSize: '0.8rem',
+  },
+  '@media (max-width: 348px)': {
+    fontSize: '0.6rem',
+    letterSpacing: '7px',
+    padding: '0.5rem',
+  },
+  '@media (min-width: 1921px)': {
+    fontSize: '2.2rem',
+  },
 })
