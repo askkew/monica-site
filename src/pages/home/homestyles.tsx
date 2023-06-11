@@ -19,15 +19,16 @@ export const Wordsection = styled('div')({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  justifyContent: 'center',
-  margin: '2rem',
-  height: 'clamp(600px, 60vw, 800px)',
+  justifyContent: 'flex-end',
+  marginBottom: '2rem',
+  height: '35vh',
+  // height: 'clamp(600px, 60vw, 800px)',
   width: 'clamp(200px, 70vw, 1200px)',
 })
 
 export const HomeParallax = styled(Parallax)({
   position: 'relative',
-  height: '40vh',
+  height: '55vh',
   width: '100%',
 })
 
@@ -63,7 +64,7 @@ export const Subbarbackground = styled('div')({
   height: '18vh',
   backgroundColor: 'black',
   position: 'absolute',
-  top: '40%',
+  top: '55%',
 })
 
 export const Subbar = styled('div')({
@@ -99,6 +100,7 @@ export const Subbarbutton = styled(Link)({
     boxShadow: '0 5px 15px rgba(0,0,0,0.3)',
     opacity: '0.95',
     zIndex: '99',
+    filter: 'grayscale(40%)',
   },
   '@media (max-width: 868px)': {
     width: '25%',
@@ -129,4 +131,63 @@ export const SubbarbuttonText = styled('span')({
   '@media (min-width: 1921px)': {
     fontSize: '2.2rem',
   },
+})
+
+export const Secondarytitle = styled('span')({
+  textTransform: 'uppercase',
+  color: 'black',
+  padding: '1rem',
+  fontSize: '2rem',
+  letterSpacing: '10px',
+  fontWeight: '400',
+})
+
+export const InfoTitle = styled('div')({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  position: 'absolute',
+  width: '70%',
+  left: '15%',
+  right: '15%',
+  textAlign: 'center',
+})
+
+export const InfoTitleText = styled('div')({
+  textTransform: 'uppercase',
+  color: '#3A3B3C',
+  padding: '1rem',
+  fontSize: '1.75rem',
+  fontWeight: '600',
+  letterSpacing: '10px',
+  '@media (max-width: 768px)': {
+    fontSize: '1.9rem',
+  },
+  '@media (max-width: 568px)': {
+    fontSize: '1.4rem',
+  }
+})
+
+export const InfoTitleDescription = styled('div')({
+  textTransform: 'uppercase',
+  color: '#3A3B3C',
+  padding: '1rem',
+  fontSize: '1.2rem',
+  letterSpacing: '2px',
+  '@media (max-width: 768px)': {
+    fontSize: '1.9rem',
+  },
+  '@media (max-width: 568px)': {
+    fontSize: '1.4rem',
+  }
+})
+
+export const InfoTitleButton = styled(InfoTitleText)({
+  fontSize: '1.4rem',
+  cursor: 'pointer',
+  '&:hover': {
+    transition: 'all 0.3s ease-in-out',
+    color: 'black',
+  }
 })

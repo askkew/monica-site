@@ -21,3 +21,12 @@ export const Lessonscontainer = styled('div')({
   margin: '2rem',
   minHeight: '60vh',
 })
+
+export const Serviceintro = styled('div')({
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  margin: '2rem',
+  minHeight: '9vh',
+})

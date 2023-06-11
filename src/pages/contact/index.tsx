@@ -3,22 +3,28 @@ import { Contactbutton, Contactcontainer, Contacttitle, Emailfield, Namefield, N
 import { Button, TextField } from '@mui/material'
 import Leg from '../../components/leg'
 
+export const ContactForm = () => {
+  return (
+    <StyledFormControl>
+      <Namefield id="outlined-basic" label="Full Name" variant="outlined"/>
+      <Emailfield id="outlined-basic" label="Email" variant="outlined" />
+      <TextField
+          id="outlined-multiline-static"
+          label="Message"
+          multiline
+          rows={10}
+        />
+      <Contactbutton variant="outlined">Send</Contactbutton>
+    </StyledFormControl>
+  )
+}
+
 const Contact = () => {
   return (
     <Contactcontainer>
       <Contacttitle>Want to learn more?</Contacttitle>
       <Contacttitle>Get in contact with me!</Contacttitle>
-      <StyledFormControl>
-        <Namefield id="outlined-basic" label="Full Name" variant="outlined"/>
-        <Emailfield id="outlined-basic" label="Email" variant="outlined" />
-        <TextField
-            id="outlined-multiline-static"
-            label="Message"
-            multiline
-            rows={10}
-          />
-        <Contactbutton variant="outlined">Send</Contactbutton>
-      </StyledFormControl>
+      <ContactForm />
       <Leg />
     </Contactcontainer>
   )

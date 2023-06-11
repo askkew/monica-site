@@ -1,8 +1,9 @@
 import React from 'react'
-import { Homecontainer, Subbar, Subbarbackground, Subbarbutton, SubbarbuttonText, Wordsection } from './homestyles'
+import { Homecontainer, Secondarytitle, Subbar, Subbarbackground, Subbarbutton, SubbarbuttonText, Wordsection } from './homestyles'
 import Leg from '../../components/leg'
 import HomeBanner from './HomeBanner'
-import Contact from '../contact'
+import { ContactForm } from '../contact'
+import InfoBanner from './InfoBanner'
 
 const Home = () => {
   return (
@@ -18,12 +19,13 @@ const Home = () => {
         </Subbar>
       </Subbarbackground>
       <Wordsection>
-        <h1>Private lessons</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti et placeat soluta architecto libero similique, repudiandae cum nostrum minus officia totam perspiciatis id facilis quae, aut iusto repellat facere?
+        <Secondarytitle>my mission</Secondarytitle>
+        <p style={{textAlign: 'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti et placeat soluta architecto libero similique, repudiandae cum nostrum minus officia totam perspiciatis id facilis quae, aut iusto repellat facere?
         Veniam repellat quibusdam fugiat voluptatem, voluptate asperiores ex similique illum quod voluptas ullam error aperiam distinctio tempora dolorum id itaque libero voluptatibus totam ipsam quo. Adipisci alias aliquam provident minima.
         Tenetur doloremque culpa, sunt perferendis deleniti eligendi tempora quae rem similique facilis libero atque nostrum officiis est, dolor cupiditate praesentium iusto sed odit consequatur dolorum quis porro animi totam. Amet.</p>
       </Wordsection>
-      <Contact />
+      <InfoBanner />
+      <ContactForm />
       <Leg />
     </Homecontainer>
   )

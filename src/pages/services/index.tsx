@@ -1,14 +1,18 @@
 import React from 'react'
-import { Lessonscontainer, Servicecontainer } from './servicestyles'
+import { Lessonscontainer, Servicecontainer, Serviceintro } from './servicestyles'
 import FirstImage from './FirstImage'
 import Secondimage from './SecondImage'
 import Leg from '../../components/leg'
 import { IoCreate } from 'react-icons/io5'
 import { GiTeacher } from 'react-icons/gi'
+import { Resultintro } from '../results/resultstyles'
 
 const Services = () => {
   return (
     <Servicecontainer>
+      <Serviceintro>
+        <h1>My art services</h1>
+      </Serviceintro>
       <FirstImage />
       <Lessonscontainer>
         <GiTeacher size={100} />
