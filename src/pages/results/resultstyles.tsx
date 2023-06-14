@@ -41,7 +41,7 @@ export const Resultintro = styled('div')({
 
 export const ResultsParallax = styled(Parallax)({
   position: 'relative',
-  height: '40vh',
+  height: '45vh',
   width: '100%',
 })
 
@@ -127,4 +127,20 @@ export const Resultlabel = styled('h1')({
 export const Resultdetails = styled(Resultlabel)({
   fontSize: 'clamp(0.7rem, 1.5vw, 1rem)',
   fontWeight: '600',
+})
+
+export const Resultintrotitle = styled('span')({
+  textTransform: 'uppercase',
+  color: 'black',
+  padding: '1rem',
+  fontSize: '2rem',
+  letterSpacing: '10px',
+  fontWeight: '400',
+})
+
+export const Resultintrodescription = styled('p')({
+  textAlign: 'center',
+  letterSpacing: '2px',
+  textTransform: 'uppercase',
+  fontSize: '0.9rem',
 })

@@ -96,9 +96,8 @@ export const Subbarbutton = styled(Link)({
   overflow: 'hidden',
   '&:hover': {
     transition: 'all 0.3s ease-in-out',
-    transform: 'translateY(5px) scale(1.025)',
+    transform: 'scale(1.025)',
     boxShadow: '0 5px 15px rgba(0,0,0,0.3)',
-    opacity: '0.95',
     zIndex: '99',
     filter: 'grayscale(40%)',
   },
@@ -189,5 +188,21 @@ export const InfoTitleButton = styled(InfoTitleText)({
   '&:hover': {
     transition: 'all 0.3s ease-in-out',
     color: 'black',
-  }
+  },
 })
+
+export const Secondarydescription = styled('p')({
+  textAlign: 'center',
+  letterSpacing: '2px',
+  textTransform: 'uppercase',
+  fontSize: '0.9rem',
+})
+
+//////
+
+export const Infobuttoncontainer = styled('div')({
+  display: 'flex',
+  flexDirection: 'row',
+})
+
+//////

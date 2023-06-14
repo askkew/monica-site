@@ -8,6 +8,12 @@ export const StyledFooter = styled("footer")({
   background: "rgb(23,23,23)",
   width: "100%",
   height: "20%",
-  padding: "15px",
+  padding: "10px",
   color: 'white',
 });
+
+export const FooterText = styled('h1')({
+  fontSize: '15px',
+  margin: '0',
+  padding: '0',
+})

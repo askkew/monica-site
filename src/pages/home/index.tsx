@@ -1,5 +1,5 @@
 import React from 'react'
-import { Homecontainer, Secondarytitle, Subbar, Subbarbackground, Subbarbutton, SubbarbuttonText, Wordsection } from './homestyles'
+import { Homecontainer, Secondarydescription, Secondarytitle, Subbar, Subbarbackground, Subbarbutton, SubbarbuttonText, Wordsection } from './homestyles'
 import Leg from '../../components/leg'
 import HomeBanner from './HomeBanner'
 import { ContactForm } from '../contact'
@@ -20,9 +20,9 @@ const Home = () => {
       </Subbarbackground>
       <Wordsection>
         <Secondarytitle>my mission</Secondarytitle>
-        <p style={{textAlign: 'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti et placeat soluta architecto libero similique, repudiandae cum nostrum minus officia totam perspiciatis id facilis quae, aut iusto repellat facere?
+        <Secondarydescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti et placeat soluta architecto libero similique, repudiandae cum nostrum minus officia totam perspiciatis id facilis quae, aut iusto repellat facere?
         Veniam repellat quibusdam fugiat voluptatem, voluptate asperiores ex similique illum quod voluptas ullam error aperiam distinctio tempora dolorum id itaque libero voluptatibus totam ipsam quo. Adipisci alias aliquam provident minima.
-        Tenetur doloremque culpa, sunt perferendis deleniti eligendi tempora quae rem similique facilis libero atque nostrum officiis est, dolor cupiditate praesentium iusto sed odit consequatur dolorum quis porro animi totam. Amet.</p>
+        Tenetur doloremque culpa, sunt perferendis deleniti eligendi tempora quae rem similique facilis libero atque nostrum officiis est, dolor cupiditate praesentium iusto sed odit consequatur dolorum quis porro animi totam. Amet.</Secondarydescription>
       </Wordsection>
       <InfoBanner />
       <ContactForm />

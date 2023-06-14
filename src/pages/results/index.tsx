@@ -1,4 +1,4 @@
-import { Resultcardimage, Resultcontainer, Resultintro, Wordsection } from './resultstyles'
+import { Resultcardimage, Resultcontainer, Resultintro, Resultintrodescription, Resultintrotitle, Wordsection } from './resultstyles'
 import Leg from '../../components/leg'
 import ResultsImage from './ResultsImage'
 import SeparatorImage from './SeparatorImage'
@@ -28,99 +28,99 @@ import alexvelasquezmain from './images/alexvelasquezmain.jpg'
 const resultData = [
   {
     id: 1,
-    name: 'Mia Huckman',
+    name: 'Our Last Roundup',
     info: 'lorem ipsum',
-    image: miah1people,
+    price: 275000,
     year: 2023,
     result: 'NULL',
     backgroundimage: miah1main,
   },
   {
-    id: 1,
-    name: 'Mia Caycedo',
+    id: 2,
+    name: 'Topic of Conversation',
     info: 'lorem ipsum',
-    image: miacpeople,
+    price: 20000,
     year: 2023,
     result: 'NULL',
     backgroundimage: miacmain,
   },
   {
-    id: 1,
-    name: 'Hannah Horton',
+    id: 3,
+    name: 'The Glamorous Homestead',
     info: 'lorem ipsum',
-    image: hannahhpeople,
+    price: 25000,
     year: 2023,
     result: 'NULL',
     backgroundimage: hannahmain,
   },
   {
-    id: 1,
-    name: 'Mia Huckman',
+    id: 4,
+    name: 'Partners in Time',
     info: 'lorem ipsum',
-    image: miah2people,
+    price: 265000,
     year: 2022,
     result: 'NULL',
     backgroundimage: miah2main,
   },
   {
-    id: 1,
-    name: 'Lilian Gerald Emesih',
+    id: 5,
+    name: 'The Story of the Black Cowboy',
     info: 'lorem ipsum',
-    image: liliangpeople,
+    price: 25000,
     year: 2022,
     result: 'NULL',
     backgroundimage: liliangmain,
   },
   {
-    id: 1,
-    name: 'Chloe Mills',
+    id: 6,
+    name: 'Now or Never',
     info: 'lorem ipsum',
-    image: chloemillspeople,
+    price: 1,
     year: 2021,
     result: 'NULL',
     backgroundimage: chloemillsmain,
   },
   {
-    id: 1,
-    name: 'Savannah Johnston',
+    id: 7,
+    name: 'Chromatic Escape',
     info: 'lorem ipsum',
-    image: savannahjohnstonpeople,
+    price: 1,
     year: 2020,
     result: 'NULL',
     backgroundimage: savannahjohnstonmain,
   },
   {
-    id: 1,
-    name: 'Sonali Puri',
+    id: 8,
+    name: 'Kickin’ up a Storm!',
     info: 'lorem ipsum',
-    image: sonalipuripeople,
+    price: 27000,
     year: 2019,
     result: 'NULL',
     backgroundimage: sonalipurimain,
   },
   {
-    id: 1,
-    name: 'Mathaly Carranza',
+    id: 9,
+    name: 'Found Ya!',
     info: 'lorem ipsum',
-    image: mathalycarranzapeople,
+    price: 15000,
     year: 2019,
     result: 'NULL',
     backgroundimage: mathalycarranzamain,
   },
   {
-    id: 1,
-    name: 'Katherine Le',
+    id: 10,
+    name: 'Greener Pastures',
     info: 'lorem ipsum',
-    image: katlepeople,
+    price: 25000,
     year: 2018,
     result: 'NULL',
     backgroundimage: katlemain,
   },
   {
-    id: 1,
-    name: 'Alex Velasquez',
+    id: 11,
+    name: 'Monroe Flower',
     info: 'lorem ipsum',
-    image: alexvelasquezpeople,
+    price: 59000,
     year: 2017,
     result: 'NULL',
     backgroundimage: alexvelasquezmain,
@@ -132,8 +132,8 @@ const Results = () => {
     <Resultcontainer>
       <ResultsImage />
       <Resultintro>
-        <h1>Results</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident corrupti eum nihil mollitia eveniet illum est aliquam facilis explicabo voluptatibus delectus ut accusantium quis perspiciatis adipisci labore, autem suscipit.</h2>
+        <Resultintrotitle>Results</Resultintrotitle>
+        <Resultintrodescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident corrupti eum nihil mollitia eveniet illum est aliquam facilis explicabo voluptatibus delectus ut accusantium quis perspiciatis adipisci labore, autem suscipit.</Resultintrodescription>
       </Resultintro>
       { resultData.map((result) => (
         <div key={result.id}>
@@ -142,8 +142,8 @@ const Results = () => {
         </div>
       ))}
       <Resultintro>
-        <h1>Want your student to have similar results?</h1>
-        <h2>Get in contact with me today!</h2>
+        <Resultintrotitle>Want your student to have similar results?</Resultintrotitle>
+        <Resultintrotitle>Get in contact with me today!</Resultintrotitle>
       </Resultintro>
       <Leg />
     </Resultcontainer>
