@@ -1,5 +1,5 @@
 import React from 'react'
-import { Contactbutton, Contactcontainer, Contacttitle, Emailfield, Namefield, Names, StyledFormControl } from './contactstyles'
+import { Contactbutton, Contactcard, Contactcontainer, Contacttitle, Emailbox, Emailfield, LeftSide, Namefield, Names, RectangleContainer, RightSide, StyledFormControl } from './contactstyles'
 import { Button, TextField } from '@mui/material'
 import Leg from '../../components/leg'
 
@@ -13,6 +13,7 @@ export const ContactForm = () => {
           label="Message"
           multiline
           rows={10}
+          style={{width: '100%'}}
         />
       <Contactbutton variant="outlined">Send</Contactbutton>
     </StyledFormControl>
@@ -22,9 +23,24 @@ export const ContactForm = () => {
 const Contact = () => {
   return (
     <Contactcontainer>
-      <Contacttitle>Want to learn more?</Contacttitle>
-      <Contacttitle>Get in contact with me!</Contacttitle>
-      <ContactForm />
+      <RectangleContainer>
+        <LeftSide>
+          <Contacttitle>Email me</Contacttitle>
+          <ContactForm />
+        </LeftSide>
+        <RightSide>
+          <Contacttitle>Contact information</Contacttitle>
+        </RightSide>
+      </RectangleContainer>
+      {/* <Contactcard>
+        <Emailbox>
+          <Contacttitle>Email me</Contacttitle>
+          <ContactForm />
+        </Emailbox>
+        <Emailbox>
+          <Contacttitle>Contact information</Contacttitle>
+        </Emailbox>
+      </Contactcard> */}
       <Leg />
     </Contactcontainer>
   )
