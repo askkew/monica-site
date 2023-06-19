@@ -1,13 +1,14 @@
 import { Parallax } from 'react-parallax';
-import main from './bannerpicture.png';
+import main from './servicebanner.jpg';
+import { ServiceParallax, Serviceparallaxlabel, Serviceparallaxtext } from './servicestyles';
 
 const FirstImage = () => {
   return (
-    <Parallax className='image' bgImage={main} strength={800}>
-      <div className='content'>
-        <span className="img-txt">Private Lessons</span>
-      </div>
-    </Parallax>
+    <ServiceParallax bgImage={main} strength={800}>
+      <Serviceparallaxlabel>
+        <Serviceparallaxtext>Tutoring services</Serviceparallaxtext>
+      </Serviceparallaxlabel>
+    </ServiceParallax>
 )};
 
 export default FirstImage;

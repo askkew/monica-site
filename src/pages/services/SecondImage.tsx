@@ -1,13 +1,11 @@
 import { Parallax } from 'react-parallax';
-import main from './bugpicture.png';
+import main from './separatorart.jpg';
+import { Artseparator, Serviceparallaxlabel, Serviceparallaxtext } from './servicestyles';
 
 const Secondimage = () => {
   return (
-    <Parallax className='image' bgImage={main} strength={300}>
-      <div className='content'>
-        <span className="img-txt">Commissions</span>
-      </div>
-    </Parallax>
+    <Artseparator bgImage={main} strength={300}>
+    </Artseparator>
 )};
 
 export default Secondimage;
