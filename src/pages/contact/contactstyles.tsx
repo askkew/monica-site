@@ -10,8 +10,8 @@ export const Contactcontainer = styled('div')({
   width: 'clamp(700px, 50vw, 1000px)',
   marginTop: '8rem',
   '@media (max-width: 768px)': {
-    marginTop: '4.5rem',
-  }
+    marginTop: '1.5rem',
+  },
 })
 
 export const Contactcard = styled('div')({
@@ -19,56 +19,51 @@ export const Contactcard = styled('div')({
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '100%',
-  height: '50%',
-  marginBottom: '10rem',
-  '@media (max-width: 1068px)': {
+  width: 'clamp(700px, 60vw ,1200px)',
+  // width: '800px',
+  height: '500px',
+  marginTop: '2rem',
+  marginBottom: '4rem',
+  '@media (max-width: 768px)': {
+    marginTop: '10rem',
     flexDirection: 'column',
-  }
+    height: 'auto',
+  },
+  '@media (max-width: 368px)': {
+    width: '250px',
+  },
 })
 
-export const Emailbox = styled('div')({
+export const StyledFormControl = styled(FormControl)({
+  borderRadius: '12px 0 0 12px',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '50%',
-  backgroundColor: 'green',
-})
-
-export const Contacttitle = styled('h1')({
-  display: 'inline-block',
-  backgroundColor: 'rgba(51, 51, 51, 0.85)',
-  textTransform: 'uppercase',
-  color: '#fff',
-  padding: '0.5rem',
-  fontSize: '1.55vw',
-  fontWeight: '500',
-  letterSpacing: '2px',
-  margin: 0,
-})
-
-export const StyledFormControl = styled(FormControl)({
-  width: 'clamp(250px, 50vw, 500px)',
   gap: '0.75rem',
-})
-
-export const Names = styled('div')({
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'space-between',
+  width: 'clamp(350px,50%,600px)',
+  height: '500px',
+  backgroundImage: 'url(' + backgroundImg + ')',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  '@media (max-width: 768px)': {
+    borderRadius: '12px 12px 0 0',
+  },
+  '@media (max-width: 368px)': {
+    width: '80%',
+  },
 })
 
 export const Namefield = styled(TextField)({
-  width: '100%',
+  width: '90%',
 })
 
 export const Emailfield = styled(TextField)({
-  width: '100%',
+  width: '90%',
 })
 
 export const Contactbutton = styled(Button)({
-  width: '100%',
+  width: '90%',
   color: 'black',
   border: '1px solid darkgrey',
   fontFamily: 'JetBrains Mono',
@@ -81,34 +76,76 @@ export const Contactbutton = styled(Button)({
   }
 })
 
-
-export const RectangleContainer = styled('div')({
+export const Contactsocials = styled('div')({
+  borderRadius: '0 12px 12px 0',
   display: 'flex',
-  flexDirection: 'row',
-  width: '100%',
-  height: '100%',
-  margin: '4rem',
+  flexDirection: 'column',
+  justifyContent: 'flex-start',
+  alignItems: 'center',
+  textAlign: 'center',
+  width: 'clamp(350px,50%,600px)',
+  height: '500px',
+  backgroundColor: 'rgba(51, 51, 51, 0.85)',
   '@media (max-width: 768px)': {
-    flexDirection: 'column',
+    borderRadius: '0 0 12px 12px',
+  },
+  '@media (max-width: 368px)': {
+    width: '80%',
   },
 })
 
-export const LeftSide = styled('div')({
+export const Socialcontainer = styled('div')({
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '60%',
-  backgroundImage: backgroundImg,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
+  gap: 0
 })
 
-export const RightSide = styled('div')({
+export const Socialtitle = styled('h1')({
+  backgroundColor: 'rgba(51, 51, 51, 0.85)',
+  textTransform: 'uppercase',
+  color: '#fff',
+  padding: '0.5rem',
+  fontSize: 'large',
+  letterSpacing: '0.5rem',
+  marginBottom: 0,
+})
+
+export const Socialdesc = styled('h1')({
+  textTransform: 'uppercase',
+  color: '#fff',
+  padding: '0.25rem',
+  fontSize: 'medium',
+  letterSpacing: '0.25rem',
+})
+
+export const Socialitemcontainer = styled('div')({
   display: 'flex',
-  flexDirection: 'column',
+  flexDirection: 'row',
+  justifyContent: 'flex-start',
   alignItems: 'center',
-  justifyContent: 'center',
-  backgroundColor: 'black',
-  width: '40%',
+})
+
+export const Socialicon = styled('span')({
+  color: '#fff',
+  fontSize: '2rem',
+  backgroundColor: 'rgba(51, 51, 51, 0.85)',
+  borderRadius: '50%',
+  padding: '0.5rem 0.8rem 0.5rem 0.8rem',
+})
+
+export const Socialname = styled('h1')({
+  textTransform: 'uppercase',
+  color: '#fff',
+  padding: '0.25rem',
+  fontWeight: 700,
+  fontSize: 'medium',
+  letterSpacing: '0.25rem',
+})
+
+export const Socialdetail = styled('h1')({
+  textTransform: 'uppercase',
+  color: 'darkgrey',
+  padding: '0.25rem',
+  fontSize: 'small',
+  letterSpacing: '0.25rem',
 })

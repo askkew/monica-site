@@ -72,6 +72,17 @@ export const Artseparator = styled(Parallax)({
   width: '100%',
 })
 
+export const Serviceseparatorbartext = styled('h1')({
+  textAlign: 'center',
+  textTransform: 'uppercase',
+  color: '#000',
+  fontWeight: '500',
+  padding: '1rem',
+  fontSize: '1.5vw',
+})
+
+////Boxservicecontainer
+
 export const Boxservicecontainer = styled('div')({
   display: 'flex',
   flexDirection: 'column',
@@ -83,4 +94,24 @@ export const Boxservicecontainer = styled('div')({
   position: 'relative',
   margin: '1rem',
   borderRadius: '0.5rem',
+  cursor: 'pointer',
 })
+
+export const Boxserviceimage = styled('img')({
+  width: '100%',
+  height: '100%',
+  objectFit: 'cover',
+  position: 'absolute',
+})
+
+export const Boxservicelabel = styled('h1')({
+  position: 'relative',
+  backgroundColor: 'rgba(51, 51, 51, 0.85)',
+  textTransform: 'uppercase',
+  zIndex: 1,
+  color: '#fff',
+  padding: '0.5rem',
+})
+
+
+//////////////

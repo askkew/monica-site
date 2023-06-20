@@ -1,5 +1,5 @@
 import React from 'react'
-import { Boxservicecontainer, Lessonscontainer, Servicecontainer, Serviceintro, Serviceseparatorbar } from './servicestyles'
+import { Boxservicecontainer, Boxserviceimage, Boxservicelabel, Lessonscontainer, Servicecontainer, Serviceintro, Serviceseparatorbar, Serviceseparatorbartext } from './servicestyles'
 import FirstImage from './FirstImage'
 import Secondimage from './SecondImage'
 import Leg from '../../components/leg'
@@ -16,9 +16,9 @@ const groupLessons = { icon: GiTeacher, imageSrc: groupImage, title: 'Group less
 const Boxservice = ({ data }: { data: any }) => {
   return (
     <Boxservicecontainer>
-      <img src={data.imageSrc} style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover' }} />
+      <Boxserviceimage src={data.imageSrc}/>
       <data.icon style={{ position: 'relative', zIndex: 1, color: 'white' }} size={50} />
-      <h1 style={{ position: 'relative', zIndex: 1, color: 'white' }}>{data.title}</h1>
+      <Boxservicelabel>{data.title}</Boxservicelabel>
     </Boxservicecontainer>
   )
 }
@@ -28,7 +28,7 @@ const Services = () => {
     <Servicecontainer>
       <FirstImage />
       <Serviceseparatorbar>
-        <h1></h1>
+        <Serviceseparatorbartext>My mission is to help students get their art into the Houston Rodeo Live Art Auction!</Serviceseparatorbartext>
       </Serviceseparatorbar>
       <Lessonscontainer>
         <Boxservice data={privateLessons}/>
