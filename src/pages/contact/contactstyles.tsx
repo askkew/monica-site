@@ -56,24 +56,31 @@ export const StyledFormControl = styled(FormControl)({
 
 export const Namefield = styled(TextField)({
   width: '90%',
+  backgroundColor: 'gainsboro',
 })
 
 export const Emailfield = styled(TextField)({
   width: '90%',
+  backgroundColor: 'gainsboro',
 })
 
 export const Contactbutton = styled(Button)({
   width: '90%',
   color: 'black',
+  borderRadius: 'none',
   border: '1px solid darkgrey',
+  boxShadow: 'none',
+  backgroundColor: 'gainsboro',
   fontFamily: 'JetBrains Mono',
   ':hover': {
     border: '1px solid black',
+    backgroundColor: 'rgba(51, 51, 51, 0.85)',
+    color: 'white',
   },
   ':active': {
-    border: '2px solid #2196f3',
-    color: '#2196f3',
-  }
+    backgroundColor: 'rgba(51, 51, 51, 0.85)',
+    color: 'white',
+  },
 })
 
 export const Contactsocials = styled('div')({

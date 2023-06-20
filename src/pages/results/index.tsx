@@ -24,6 +24,7 @@ import katlepeople from './images/katlepeople.jpg'
 import katlemain from './images/katlemain.jpg'
 import alexvelasquezpeople from './images/alexvelasquezpeople.jpg'
 import alexvelasquezmain from './images/alexvelasquezmain.jpg'
+import { ContactForm } from '../contact'
 
 const resultData = [
   {
@@ -145,6 +146,7 @@ const Results = () => {
         <Resultintrotitle>Want your student to have similar results?</Resultintrotitle>
         <Resultintrotitle>Get in contact with me today!</Resultintrotitle>
       </Resultintro>
+      <ContactForm />
       <Leg />
     </Resultcontainer>
   )
