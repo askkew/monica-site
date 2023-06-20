@@ -6,8 +6,8 @@ const ResultsImage = () => {
   return (
     <ResultsParallax className='image' bgImage={main} strength={800}>
       <ResultsTitle>
-        <ResultsTitleText>Congrats to Mia Huckman!</ResultsTitleText>
-        <ResultsSubtitle>Houston Rodeo Art Auction 2023 Winner!</ResultsSubtitle>
+        <ResultsTitleText>Houston Rodeo Art Auction 2023 Winner!</ResultsTitleText>
+        <ResultsSubtitle>Art sold for $250,000</ResultsSubtitle>
       </ResultsTitle>
     </ResultsParallax>
 )};
