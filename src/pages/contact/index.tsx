@@ -76,7 +76,7 @@ export const ContactForm = () => {
             label="Message"
             multiline
             rows={7}
-            style={{width: '90%', backgroundColor: 'gainsboro'}}
+            style={{width: '90%', backgroundColor: 'gainsboro', opacity: '0.8',}}
           />
           <Contactbutton variant="contained">Send</Contactbutton>
         </ThemeProvider>

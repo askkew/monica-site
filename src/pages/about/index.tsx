@@ -2,22 +2,33 @@ import React from 'react'
 import { Aboutcontainer, Firstcard, Secondcard } from './aboutstyles'
 import { Card, Typography } from '@mui/material'
 import Leg from '../../components/leg'
+import Secondimage from '../services/SecondImage'
+import { ContactForm } from '../contact'
+import Separator from '../../components/separator'
+import primary from './milkyway.jpg';
+import secondary from './secondary2.png';
+
+const data = {
+  image: primary,
+  text: 'About me',
+};
+
+const dataTwo = {
+  image: secondary,
+  text: 'Get in contact with me!',
+};
 
 const About = () => {
   return (
     <Aboutcontainer>
-      {/* <Typography>WORK IN PROGRESS</Typography> */}
-      {/* <Firstcard>
-        <Card>
-          <Typography>WORK IN PROGRESS</Typography>
-          <Secondarydescription>
-          I've been a Houstonian for the past 34 years and along the way snagged a BA at the University of Houston. In between overseeing the Arts and being a mom, I paint. I've been recognized as edgy, relevant, and Contemporary in regards to my art. I love that.
-          I also partake in photography embodied by Texas and the love I have for it. Encounter my "Texas Rustic Series." 
-          Lastly, my ultimate goal is to become an art curator in a national museum. Showcasing modern art, and spotlighting the present day artist.
-          </Secondarydescription>
-        </Card>
-        <img src="https://img1.wsimg.com/isteam/ip/8290d3ac-ca9d-4737-ad0b-b2a72ebfe6f7/Monica%20Medellin%20Art.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25" alt="Image" width="50%"/>
-      </Firstcard> */}
+      <Separator data={data} />
+      <Typography>Background</Typography>
+      <Typography>Monica has been a middle school and high school art teacher for the past 11 years where she specialized in having students qualify for the Houston Livestock Show & Rodeo's Art Auction on an annual basis.</Typography>
+      <Typography>Throughout her many years in Art instruction, Monica has become a resourceful and imaginative professional who is highly trained in a wide array of artistic mediums and approaches. Monica has a special talent for instilling art appreciation, while promoting creativity and open-mindedness. She has a proven ability to maintain well-disciplined and highly motivated environments while offering individualized support and positive inspiration.
+      </Typography>
+      <img src="https://img1.wsimg.com/isteam/ip/8290d3ac-ca9d-4737-ad0b-b2a72ebfe6f7/Monica%20Medellin%20Art.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25" alt="Image" width="20%" style={{marginBottom: '20px'}}/>
+      <Separator data={dataTwo} />
+      <ContactForm />
       <Leg />
     </Aboutcontainer>
   )

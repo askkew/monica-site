@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Button, FormControl, TextField } from '@mui/material';
-import backgroundImg from './temppic.jpg'
+import backgroundImg from './bugpicture.png'
 
 export const Contactcontainer = styled('div')({
   display: 'flex',
@@ -57,15 +57,18 @@ export const StyledFormControl = styled(FormControl)({
 export const Namefield = styled(TextField)({
   width: '90%',
   backgroundColor: 'gainsboro',
+  opacity: '0.8',
 })
 
 export const Emailfield = styled(TextField)({
   width: '90%',
   backgroundColor: 'gainsboro',
+  opacity: '0.8',
 })
 
 export const Contactbutton = styled(Button)({
   width: '90%',
+  opacity: '0.8',
   color: 'black',
   borderRadius: 'none',
   border: '1px solid darkgrey',
@@ -92,7 +95,7 @@ export const Contactsocials = styled('div')({
   textAlign: 'center',
   width: 'clamp(350px,50%,600px)',
   height: '500px',
-  backgroundColor: 'rgba(51, 51, 51, 0.85)',
+  backgroundColor: 'rgba(51, 51, 51, 0.65)',
   '@media (max-width: 768px)': {
     borderRadius: '0 0 12px 12px',
   },

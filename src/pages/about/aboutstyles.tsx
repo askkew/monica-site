@@ -6,7 +6,8 @@ export const Aboutcontainer = styled('div')({
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  width: 'clamp(700px, 50vw, 1000px)',
+  // width: 'clamp(700px, 50vw, 1000px)',
+  width: '100vw',
   // height: '60vh',
   marginTop: '6rem',
   '@media (max-width: 768px)': {
