@@ -19,10 +19,6 @@ const Explorelinks = [
     link: '/results'
   },
   {
-    name: 'Shop',
-    link: '/shop'
-  },
-  {
     name: 'Contact',
     link: '/contact'
   },
