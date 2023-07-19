@@ -35,7 +35,7 @@ export const Resultintro = styled('div')({
   alignItems: 'center',
   justifyContent: 'center',
   margin: '2rem',
-  height: 'clamp(150px, 10vw, 300px)',
+  height: 'clamp(150px, 8vw, 300px)',
   width: 'clamp(200px, 70vw, 1200px)',
 })
 
@@ -43,6 +43,13 @@ export const ResultsParallax = styled(Parallax)({
   position: 'relative',
   height: '45vh',
   width: '100%',
+  fiilter: 'saturate(0)',
+  '@media (max-width: 768px)': {
+    height: '40vh',  
+  },
+  '@media (max-width: 468px)': {
+    height: '30vh',  
+  },
 })
 
 export const ResultsTitle = styled('div')({
@@ -53,6 +60,7 @@ export const ResultsTitle = styled('div')({
   marginTop: '5rem',
   position: 'absolute',
   width: '100%',
+  textAlign: 'center',
 })
 
 export const ResultsTitleText = styled('span')({
@@ -62,6 +70,12 @@ export const ResultsTitleText = styled('span')({
   padding: '1rem',
   fontSize: '2.5rem',
   letterSpacing: '10px',
+  '@media (max-width: 768px)': {
+    fontSize: '1.5rem',
+  },
+  '@media (max-width: 468px)': {
+    fontSize: '1.25rem',
+  },
 })
 
 export const ResultsSubtitle = styled('span')({
@@ -71,15 +85,21 @@ export const ResultsSubtitle = styled('span')({
   padding: '1rem',
   fontSize: '1.7rem',
   letterSpacing: '10px',
+  '@media (max-width: 768px)': {
+    fontSize: '1.25rem',
+  },
+  '@media (max-width: 468px)': {
+    fontSize: '0.9rem',
+  },
 })
 
 export const Resultcardimage = styled('img')({
   height: '35vh',
   '@media (max-width: 768px)': {
-    height: '25vh',  
+    height: '20vh',  
   },
-  '@media (max-width: 368px)': {
-    height: '19vh',  
+  '@media (max-width: 468px)': {
+    height: '16vh',  
   }
 })
 

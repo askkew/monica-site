@@ -25,6 +25,8 @@ import katlemain from './images/katlemain.jpg'
 import alexvelasquezpeople from './images/alexvelasquezpeople.jpg'
 import alexvelasquezmain from './images/alexvelasquezmain.jpg'
 import { ContactForm } from '../contact'
+import { Divider } from '@mui/material'
+import { AboutTypographyDesc, AboutTypographyTitle, Aboutdetails, Aboutdetailstext } from '../about/aboutstyles'
 
 const resultData = [
   {
@@ -128,17 +130,30 @@ const resultData = [
   },
 ]
 
+const resultInfo = [
+  {
+    title: 'Results',
+    description: 'Monica has been a middle school and high school art teacher for the past 11 years where she specialized in having students qualify for the Houston Livestock Show & Rodeo\'s Art Auction on an annual basis.',
+  }
+]
+
 const Results = () => {
   return (
     <Resultcontainer>
       <ResultsImage />
-      <Resultintro>
-        <Resultintrotitle>Results</Resultintrotitle>
-        <Resultintrodescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident corrupti eum nihil mollitia eveniet illum est aliquam facilis explicabo voluptatibus delectus ut accusantium quis perspiciatis adipisci labore, autem suscipit.</Resultintrodescription>
-      </Resultintro>
-      { resultData.map((result) => (
+      <div style={{width: '100%', height: '50px', backgroundColor: 'rgb(234,234,234)'}}/>
+      <Aboutdetails style={{minHeight: '30vh', width: '100vw', justifyContent: 'center'}}>
+        <Aboutdetailstext style={{textAlign: 'center'}}>
+          <AboutTypographyTitle>{resultInfo[0].title}</AboutTypographyTitle>
+          <Divider />
+          <AboutTypographyDesc>{resultInfo[0].description}</AboutTypographyDesc>
+          <Divider />
+        </Aboutdetailstext>
+      </Aboutdetails>
+      <div style={{width: '100%', height: '50px', backgroundColor: 'rgb(234,234,234)'}}/>
+      { resultData.map((result, index) => (
         <div key={result.id}>
-          <Wordsection />
+          {index !== 0 && <Wordsection />}
           <SeparatorImage data={result}/>
         </div>
       ))}

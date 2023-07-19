@@ -24,6 +24,9 @@ export const Wordsection = styled('div')({
   height: '35vh',
   // height: 'clamp(600px, 60vw, 800px)',
   width: 'clamp(200px, 70vw, 1200px)',
+  '@media (max-width: 768px)': {
+    marginTop: '10rem',
+  },
 })
 
 export const HomeParallax = styled(Parallax)({

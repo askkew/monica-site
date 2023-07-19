@@ -17,7 +17,7 @@ interface SeparatorImageProps {
 const SeparatorImage = ({ data }: SeparatorImageProps) => {
   const { price, year, name, result, info, backgroundimage } = data;
   return (
-    <ResultsParallax bgImage={backgroundimage} strength={800} blur={3} style={{fiilter: 'saturate(0)', height: '45vh', position: 'relative', width: '100%'}}>
+    <ResultsParallax bgImage={backgroundimage} strength={800} blur={3}>
       <Separatorcontainer>
         <Resultcardimage src={backgroundimage} height="50"/>
         <Resultlabelcontainer>
