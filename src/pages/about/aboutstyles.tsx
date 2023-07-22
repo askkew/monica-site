@@ -48,7 +48,10 @@ export const Aboutdetailstext = styled('div')({
   flexDirection: 'column',
   textAlign: 'left',
   justifyContent: 'flex-start',
-  width: '80%',
+  width: '50%',
+  '@media (max-width: 768px)': {
+    width: '80%',
+  },
 })
 
 export const AboutTypographyTitle = styled('h1')({

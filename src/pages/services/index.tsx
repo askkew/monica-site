@@ -27,13 +27,15 @@ const Services = () => {
   return (
     <Servicecontainer>
       <FirstImage />
-      <Serviceseparatorbar>
+      <div style={{width: '100%', height: '50px', backgroundColor: 'rgb(234,234,234)'}}/>
+      {/* <Serviceseparatorbar>
         <Serviceseparatorbartext>My mission is to help students get their art into the Houston Rodeo Live Art Auction!</Serviceseparatorbartext>
-      </Serviceseparatorbar>
+      </Serviceseparatorbar> */}
       <Lessonscontainer>
         <Boxservice data={privateLessons}/>
         <Boxservice data={groupLessons}/>
       </Lessonscontainer>
+      <div style={{width: '100%', height: '50px', backgroundColor: 'rgb(234,234,234)'}}/>
       <Secondimage />
       <Lessonscontainer>
         <ContactForm />

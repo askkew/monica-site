@@ -37,7 +37,13 @@ const Separatortext = styled('h1')({
 
 const Separator = ({data}: SeparatorProps) => {
   return (
-    <Artseparator bgImage={data.image} strength={300}>
+    <Artseparator
+    style={{
+      height: '25vh',
+    }}
+    bgImage={data.image}
+    strength={300}
+    >
       <Separatorcontainer>
         <Separatortext>{data.text}</Separatortext>
       </Separatorcontainer>

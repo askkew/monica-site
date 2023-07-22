@@ -4,7 +4,10 @@ import { ServiceParallax, Serviceparallaxlabel, Serviceparallaxtext } from './se
 
 const FirstImage = () => {
   return (
-    <ServiceParallax bgImage={main} strength={800}>
+    <ServiceParallax
+    bgImage={main}
+    strength={800}
+    >
       <Serviceparallaxlabel>
         <Serviceparallaxtext>Tutoring services</Serviceparallaxtext>
       </Serviceparallaxlabel>

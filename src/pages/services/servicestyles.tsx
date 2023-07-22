@@ -37,8 +37,11 @@ export const Serviceintro = styled('div')({
 
 export const ServiceParallax = styled(Parallax)({
   position: 'relative',
-  height: '45vh',
+  height: '30vh',
   width: '100%',
+  // '@media (min-width: 1920px)': {
+  //   height: '25vh',
+  // }
 })
 
 export const Serviceparallaxlabel = styled('div')({

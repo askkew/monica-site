@@ -21,7 +21,7 @@ export const Contactcard = styled('div')({
   justifyContent: 'center',
   width: 'clamp(700px, 60vw ,1200px)',
   // width: '800px',
-  height: '500px',
+  height: '100vh',
   marginTop: '2rem',
   marginBottom: '4rem',
   '@media (max-width: 768px)': {

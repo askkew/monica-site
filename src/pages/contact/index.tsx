@@ -52,12 +52,12 @@ const Socialforms = [
   },
   {
     name: 'Phone',
-    detail: '999-999-9999',
+    detail: '281-948-5332',
     icon: <AiFillPhone />,
   },
   {
     name: 'Email',
-    detail: 'test@test.com',
+    detail: 'critartconsulting@gmail.com',
     icon: <SiMinutemailer />,
   },
 ]
