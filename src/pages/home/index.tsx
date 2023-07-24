@@ -28,7 +28,7 @@ const Home = () => {
         </Subbar>
       </Subbarbackground>
       <div style={{width: '100%', height: '50px', backgroundColor: 'rgb(234,234,234)', marginTop: '5rem'}}/>
-      <Aboutdetails style={{minHeight: '30vh', width: '100vw', justifyContent: 'center'}}>
+      <Aboutdetails style={{minHeight: '30vh', width: '100vw', justifyContent: 'center', alignContent: 'center', alignItems: 'center'}}>
         <Aboutdetailstext style={{textAlign: 'center'}}>
           <AboutTypographyTitle>{homeInfo[0].title}</AboutTypographyTitle>
           <Divider />

@@ -30,7 +30,7 @@ const InfoBanner = () => {
   return (
     <HomeParallax style={{height: '25vh', marginBottom: '4rem'}} bgImage={activeContent.image} strength={800}>
       <InfoTitle>
-        <InfoTitleText>Services</InfoTitleText>
+        {/* <InfoTitleText>Services</InfoTitleText>
         <InfoTitleDescription>{InfoBannerContent[0].description}</InfoTitleDescription>
         <Infobuttoncontainer>
           {InfoBannerContent.map((content, index) => (
@@ -46,7 +46,7 @@ const InfoBanner = () => {
               )}
             </React.Fragment>
           ))}
-        </Infobuttoncontainer>
+        </Infobuttoncontainer> */}
       </InfoTitle>
     </HomeParallax>
 )};

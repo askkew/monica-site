@@ -1,12 +1,15 @@
 import React from 'react'
-import { Contactbutton, Contactcard, Contactcontainer, Contactsocials, Emailfield, Namefield, Socialcontainer, Socialdesc, Socialdetail, Socialicon, Socialitemcontainer, Socialname, Socialtitle, StyledFormControl } from './contactstyles'
-import { Button, FormControl, TextField } from '@mui/material'
+import { Contactbutton, Contactcard, Contactcontainer, Contactsocials, Emailfield, Namefield, SocialSubContainer, Socialcontainer, Socialdesc, Socialdetail, Socialicon, Socialitemcontainer, Socialname, Socialtitle, StyledFormControl } from './contactstyles'
+import { Button, Divider, FormControl, TextField } from '@mui/material'
 import Leg from '../../components/leg'
 import { AiFillPhone } from 'react-icons/ai'
 import { SiMinutemailer } from 'react-icons/si'
 import { MdLocationPin } from 'react-icons/md'
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import { createTheme, ThemeProvider, Theme, useTheme } from '@mui/material/styles';
+import { AboutTypographyDesc, Aboutdetails, Aboutdetailstext } from '../about/aboutstyles'
+import secondary from './secondary2.png';
+import Separator from '../../components/separator'
 
 const customTheme = (outerTheme: Theme) =>
   createTheme({
@@ -62,6 +65,12 @@ const Socialforms = [
   },
 ]
 
+
+const dataTwo = {
+  image: secondary,
+  text: 'Get in contact with me!',
+};
+
 export const ContactForm = () => {
   const outerTheme = useTheme();
   return (
@@ -90,8 +99,10 @@ export const ContactForm = () => {
           {Socialforms.map((social) => (
             <Socialitemcontainer>
               <Socialicon>{social.icon}</Socialicon>
-              <Socialname>{social.name}:</Socialname>
-              <Socialdetail>{social.detail}</Socialdetail>
+              <SocialSubContainer>
+                <Socialname>{social.name}:</Socialname>
+                <Socialdetail>{social.detail}</Socialdetail>
+              </SocialSubContainer>
             </Socialitemcontainer> 
           ))}
         </Socialcontainer>
@@ -103,6 +114,14 @@ export const ContactForm = () => {
 const Contact = () => {
   return (
     <Contactcontainer>
+      <Separator data={dataTwo} />
+      {/* <Aboutdetails style={{minHeight: '20vh', width: '100vw', justifyContent: 'center'}}>
+        <Aboutdetailstext style={{textAlign: 'center'}}>
+          <Divider />
+          <AboutTypographyDesc>Get in contact with me if you have any questions!</AboutTypographyDesc>
+          <Divider />
+        </Aboutdetailstext>
+      </Aboutdetails> */}
       <ContactForm />
       <Leg />
     </Contactcontainer>

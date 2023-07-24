@@ -74,7 +74,7 @@ export const ResultsTitleText = styled('span')({
     fontSize: '1.5rem',
   },
   '@media (max-width: 468px)': {
-    fontSize: '1.25rem',
+    fontSize: '1rem',
   },
 })
 
@@ -89,7 +89,7 @@ export const ResultsSubtitle = styled('span')({
     fontSize: '1.25rem',
   },
   '@media (max-width: 468px)': {
-    fontSize: '0.9rem',
+    fontSize: '0.7rem',
   },
 })
 
@@ -156,11 +156,4 @@ export const Resultintrotitle = styled('span')({
   fontSize: '2rem',
   letterSpacing: '10px',
   fontWeight: '400',
-})
-
-export const Resultintrodescription = styled('p')({
-  textAlign: 'center',
-  letterSpacing: '2px',
-  textTransform: 'uppercase',
-  fontSize: '0.9rem',
 })

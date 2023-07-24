@@ -1,28 +1,17 @@
-import { Resultcardimage, Resultcontainer, Resultintro, Resultintrodescription, Resultintrotitle, Wordsection } from './resultstyles'
+import { Resultcontainer, Resultintro, Resultintrotitle, Wordsection } from './resultstyles'
 import Leg from '../../components/leg'
 import ResultsImage from './ResultsImage'
 import SeparatorImage from './SeparatorImage'
-import hannahhpeople from './images/hannahhpeople.jpg'
 import hannahmain from './images/hannahhmain.jpg'
-import miacpeople from './images/miacpeople.jpg'
 import miacmain from './images/miacmain.jpg'
-import miah2people from './images/miah2people.jpg'
 import miah2main from './images/miah2main.jpeg'
-import liliangpeople from './images/liliangpeople.jpg'
 import liliangmain from './images/liliangmain.jpg'
-import miah1people from './images/miah1people.jpg'
 import miah1main from './images/miah1main.jpg'
-import chloemillspeople from './images/chloemillspeople.jpg'
 import chloemillsmain from './images/chloemillsmain.png'
-import savannahjohnstonpeople from './images/savannahjohnstonpeople.jpg'
 import savannahjohnstonmain from './images/miah1main.jpg'
-import sonalipuripeople from './images/sonalipuripeople.jpg'
 import sonalipurimain from './images/sonalipurimain.jpg'
-import mathalycarranzapeople from './images/mathalycarranzapeople.jpg'
 import mathalycarranzamain from './images/mathalycarranzamain.jpg'
-import katlepeople from './images/katlepeople.jpg'
 import katlemain from './images/katlemain.jpg'
-import alexvelasquezpeople from './images/alexvelasquezpeople.jpg'
 import alexvelasquezmain from './images/alexvelasquezmain.jpg'
 import { ContactForm } from '../contact'
 import { Divider } from '@mui/material'
@@ -133,7 +122,7 @@ const resultData = [
 const resultInfo = [
   {
     title: 'Results',
-    description: 'Monica has been a middle school and high school art teacher for the past 11 years where she specialized in having students qualify for the Houston Livestock Show & Rodeo\'s Art Auction on an annual basis.',
+    description: 'Monica has been a middle school and high school art teacher for the past 13 years where she specialized in having students qualify for the Houston Livestock Show & Rodeo\'s Art Auction on an annual basis.',
   }
 ]
 
@@ -142,7 +131,7 @@ const Results = () => {
     <Resultcontainer>
       <ResultsImage />
       <div style={{width: '100%', height: '50px', backgroundColor: 'rgb(234,234,234)'}}/>
-      <Aboutdetails style={{minHeight: '30vh', width: '100vw', justifyContent: 'center'}}>
+      <Aboutdetails style={{minHeight: '30vh', width: '100vw', justifyContent: 'center', alignContent: 'center', alignItems: 'center'}}>
         <Aboutdetailstext style={{textAlign: 'center'}}>
           <AboutTypographyTitle>{resultInfo[0].title}</AboutTypographyTitle>
           <Divider />
@@ -157,10 +146,10 @@ const Results = () => {
           <SeparatorImage data={result}/>
         </div>
       ))}
-      <Resultintro>
+      {/* <Resultintro>
         <Resultintrotitle>Want your student to have similar results?</Resultintrotitle>
         <Resultintrotitle>Get in contact with me today!</Resultintrotitle>
-      </Resultintro>
+      </Resultintro> */}
       <ContactForm />
       <Leg />
     </Resultcontainer>
@@ -168,3 +157,4 @@ const Results = () => {
 }
 
 export default Results
+

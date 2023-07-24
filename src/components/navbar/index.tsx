@@ -20,11 +20,11 @@ const Navbar = () => {
             <StyledExitButton onClick={toggleOpen}>
               <StyledExitIcon />
             </StyledExitButton>
-            <Navlink id="custombutton" to='/'>Home</Navlink>
-            <Navlink id="custombutton" to='/about'>About</Navlink>
-            <Navlink id="custombutton" to='/services'>Services</Navlink>
-            <Navlink id="custombutton" to='/results'>Results</Navlink>
-            <Navlink id="custombutton" to='/contact'>Contact</Navlink>
+            <Navlink onClick={toggleOpen} id="custombutton" to='/'>Home</Navlink>
+            <Navlink onClick={toggleOpen} id="custombutton" to='/about'>About</Navlink>
+            <Navlink onClick={toggleOpen} id="custombutton" to='/services'>Services</Navlink>
+            <Navlink onClick={toggleOpen} id="custombutton" to='/results'>Results</Navlink>
+            <Navlink onClick={toggleOpen} id="custombutton" to='/contact'>Contact</Navlink>
           </MobileNavContainer>
         </StyledDrawer>
         <Navbarbuttons>

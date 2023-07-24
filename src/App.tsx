@@ -17,6 +17,7 @@ const Container = styled('div')({
   alignItems: 'center',
   justifyContent: 'center',
   width: '100vw',
+  overflow: 'hidden',
 })
 
 function App() {

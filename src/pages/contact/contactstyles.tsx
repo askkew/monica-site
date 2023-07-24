@@ -7,8 +7,9 @@ export const Contactcontainer = styled('div')({
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  width: 'clamp(700px, 50vw, 1000px)',
-  marginTop: '8rem',
+  // width: 'clamp(700px, 50vw, 1000px)',
+  width: '100%',
+  marginTop: '6rem',
   '@media (max-width: 768px)': {
     marginTop: '1.5rem',
   },
@@ -20,18 +21,18 @@ export const Contactcard = styled('div')({
   alignItems: 'center',
   justifyContent: 'center',
   width: 'clamp(700px, 60vw ,1200px)',
-  // width: '800px',
-  height: '100vh',
-  marginTop: '2rem',
-  marginBottom: '4rem',
+  height: '50vh',
+  marginTop: '5rem',
+  marginBottom: '8rem',
   '@media (max-width: 768px)': {
     marginTop: '10rem',
     flexDirection: 'column',
     height: 'auto',
   },
   '@media (max-width: 368px)': {
-    width: '250px',
+    width: '50%',
   },
+  // overflow: 'hidden',
 })
 
 export const StyledFormControl = styled(FormControl)({
@@ -141,6 +142,21 @@ export const Socialicon = styled('span')({
   backgroundColor: 'rgba(51, 51, 51, 0.85)',
   borderRadius: '50%',
   padding: '0.5rem 0.8rem 0.5rem 0.8rem',
+  '@media (max-width: 768px)': {
+    fontSize: '1.5rem',
+  },
+})
+
+export const SocialSubContainer = styled('div')({
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'flex-start',
+  alignItems: 'center',
+  '@media (max-width: 768px)': {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+  },
 })
 
 export const Socialname = styled('h1')({
@@ -150,6 +166,10 @@ export const Socialname = styled('h1')({
   fontWeight: 700,
   fontSize: 'medium',
   letterSpacing: '0.25rem',
+  '@media (max-width: 768px)': {
+    fontSize: '3vw',
+    margin: 0,
+  },
 })
 
 export const Socialdetail = styled('h1')({
@@ -157,5 +177,9 @@ export const Socialdetail = styled('h1')({
   color: 'darkgrey',
   padding: '0.25rem',
   fontSize: 'small',
-  letterSpacing: '0.25rem',
+  letterSpacing: '0.05rem',
+  '@media (max-width: 768px)': {
+    fontSize: '3vw',
+    margin: 0,
+  },
 })
