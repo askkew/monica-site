@@ -4,7 +4,8 @@ import ResultsImage from './ResultsImage'
 import SeparatorImage from './SeparatorImage'
 import hannahmain from './images/hannahhmain.jpg'
 import miacmain from './images/miacmain.jpg'
-import miah2main from './images/miah2main.jpeg'
+import chromaticescape from './images/chromaticescape.jpg'
+import miah2main from './images/miah2main.jpg'
 import liliangmain from './images/liliangmain.jpg'
 import miah1main from './images/miah1main.jpg'
 import chloemillsmain from './images/chloemillsmain.png'
@@ -16,6 +17,7 @@ import alexvelasquezmain from './images/alexvelasquezmain.jpg'
 import { ContactForm } from '../contact'
 import { Divider } from '@mui/material'
 import { AboutTypographyDesc, AboutTypographyTitle, Aboutdetails, Aboutdetailstext } from '../about/aboutstyles'
+
 
 const resultData = [
   {
@@ -79,7 +81,7 @@ const resultData = [
     price: 1,
     year: 2020,
     result: 'NULL',
-    backgroundimage: savannahjohnstonmain,
+    backgroundimage: chromaticescape,
   },
   {
     id: 8,

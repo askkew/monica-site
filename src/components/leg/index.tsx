@@ -35,16 +35,11 @@ const Servicelinks = [
   }
 ]
 
-// const Shoplinks = [
-//   {
-//     name: 'Merch',
-//     link: 'https://www.redbubble.com/people/monicamedellin/shop'
-//   },
-//   {
-//     name: 'Purchase my art!',
-//     link: 'https://www.etsy.com/shop/MonicaMedellinArt'
-//   }
-// ]
+const handleClick = (link: string) => {
+  // Handle link navigation here, e.g., using React Router or window.location
+  // For demonstration purposes, we'll use window.location to navigate to the link
+  window.location.href = link;
+};
 
 const Leg = () => {
   return (
@@ -52,27 +47,27 @@ const Leg = () => {
       <Linksection1>
         <h1>Services</h1>
         {Servicelinks.map((link) => (
-          <StyledLink href={link.link}>{link.name}</StyledLink>
+          <StyledLink key={link.link} onClick={() => handleClick(link.link)}>
+            {link.name}
+          </StyledLink>
         ))}
       </Linksection1>
       <Linksection1>
         <h1>Explore the site!</h1>
         {Explorelinks.map((link) => (
-          <StyledLink href={link.link}>{link.name}</StyledLink>
+          <StyledLink key={link.link} onClick={() => handleClick(link.link)}>
+            {link.name}
+          </StyledLink>
         ))}
       </Linksection1>
-      {/* <Linksection1>
-        <h1>Stores</h1>
-        {Shoplinks.map((link) => (
-          <StyledLink href={link.link}>{link.name}</StyledLink>
-        ))}
-      </Linksection1> */}
       <Linksection1>
         <h1>Contact us!</h1>
-        <StyledLink href="mailto:critartconsulting@gmail.com" target="_blank">email</StyledLink>
-        <StyledLink href="https://www.instagram.com/monicasrodeo/" target="_blank">instagram</StyledLink>
-        {/* <StyledLink href="https://www.facebook.com/MonicaMedellinArt/" target="_blank">facebook</StyledLink> */}
-        {/* <StyledLink href="https://twitter.com/1MonicaMedellin" target="_blank">twitter</StyledLink> */}
+        <StyledLink onClick={() => handleClick('mailto:critartconsulting@gmail.com')} target="_blank">
+          email
+        </StyledLink>
+        <StyledLink onClick={() => handleClick('https://www.instagram.com/monicasrodeo/')} target="_blank">
+          instagram
+        </StyledLink>
       </Linksection1>
     </Legstyles>
   )

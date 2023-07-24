@@ -23,7 +23,7 @@ const SeparatorImage = ({ data }: SeparatorImageProps) => {
         <Resultlabelcontainer>
           <Resultlabel>{name}</Resultlabel>
           <Resultdetails>{year}</Resultdetails>
-          <Resultdetails>sold for ${price}</Resultdetails>
+          { price === 1 ? <Resultdetails>Sold</Resultdetails> : <Resultdetails>{`Sold for $${price}`}</Resultdetails> }
         </Resultlabelcontainer>
       </Separatorcontainer>
     </ResultsParallax>

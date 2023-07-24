@@ -31,6 +31,7 @@ export const Linksection1 = styled('div')({
 export const StyledLink = styled('a')({
   textDecoration: 'underline',
   color: 'white',
+  cursor: 'pointer',
   textUnderlineOffset: '0.25rem',
   '&:hover': {
     color: 'rgb(255, 255, 255, 0.5)',
