@@ -7,7 +7,7 @@ const HomeBanner = () => {
   return (
     <HomeParallax className='image' bgImage={secondary} strength={800}>
       <HomeTitle>
-        <HomeTitleText>Crit Art Consultng</HomeTitleText>
+        <HomeTitleText>Crit Art Consulting</HomeTitleText>
       </HomeTitle>
     </HomeParallax>
 )};
